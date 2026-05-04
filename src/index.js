@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { query, healthCheck } from './db.js';
 import healthRoutes from './routes/health.js';
+import aboutRoutes from './routes/about.js';
 import notesRoutes from './routes/notes.js';
 
 // Load environment variables
@@ -27,8 +28,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Routes
 app.use('/health', healthRoutes);
-app.use('/api/notes', notesRoutes);
+app.use('/about', aboutRoutes);
 
+app.use('/api/notes', notesRoutes
 /**
  * GET /
  * Home page - list all notes
