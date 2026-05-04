@@ -30,7 +30,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use('/health', healthRoutes);
 app.use('/about', aboutRoutes);
 
-app.use('/api/notes', notesRoutes
+app.use('/api/notes', notesRoutes);
 /**
  * GET /
  * Home page - list all notes
