@@ -10,17 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - run: echo "Starting workflow"
+      - run: echo "Checking out codebase"
       - name: Checkout codebase
         uses: actions/checkout@v6
 
-      - name: Run unit tests
-        uses: actions/setup-node@v4
+      - run: echo "Setting up Node.js"
+      - name: Setup node
+        uses: actions/setup-node@v6
         with:
           node-version: 20
           cache: 'npm'
         
+      - run: echo "Installing dependencies"
       - name: Install dependencies
         run: npm ci
 
+
+      - run: echo "Running Unit tests"
       - name: Run Unit test
         run: npm test
+
+      - run: echo "Finished workflow"
