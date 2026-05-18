@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    stratery:
+    strategy:
       matrix:
         node-version: [18, 20, 24]
 
