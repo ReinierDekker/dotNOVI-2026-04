@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/user/repo/branch/main/graph/badge.svg)](https://codecov.io/gh/user/repo)
+[![codecov](https://codecov.io/github/ReinierDekker/dotNOVI-2026-04/branch/feature%2Fcontinuous-integration/graph/badge.svg?token=43XRCETM1E)](https://codecov.io/github/ReinierDekker/dotNOVI-2026-04)
 
 # dotNOVI Application
 
