@@ -33,11 +33,14 @@ jobs:
 
       - run: echo "Running Unit tests"
       - name: Run Unit test
-        run: npm test
+        run: npm test -- --coverage
 
       - name: Uplooad coverage
         uses: codecov/codecov-action@v6
         with:
+          token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage/lcov.info
+
+      
 
       - run: echo "Finished workflow"
